@@ -43,8 +43,12 @@ import torch
 from transformers import GPT2TokenizerFast, GPT2LMHeadModel, pipeline
 
 # Check device availability and set the model to use GPU/CPU accordingly
-device = "cuda" if torch.cuda.is_available() else "cpu"
-print(f"Using device: {device}")
+#device = "cuda" if torch.cuda.is_available() else "cpu"
+#print(f"Using device: {device}")
+
+# we use cpu so we remove automatic cuda or replace with this
+device="cpu"
+print("Using CPU for Inference")
 
 def load_model_and_tokenizer(model_path):
     tokenizer = GPT2TokenizerFast.from_pretrained(model_path)
