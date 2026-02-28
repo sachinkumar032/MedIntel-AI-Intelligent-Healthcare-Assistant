@@ -1,6 +1,6 @@
 flask
-torch==2.0.0
-transformers==4.36.2
+torch
+transformers
 nltk
 numpy
 pandas
