@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from MedQuard import *
+from app.MedQuard import *
 
 app = Flask(__name__)
 # medical_qa = MedicalQA()
