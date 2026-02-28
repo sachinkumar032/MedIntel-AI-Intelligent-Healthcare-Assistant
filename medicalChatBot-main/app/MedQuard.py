@@ -55,7 +55,7 @@ def load_model_and_tokenizer(model_path):
     model = GPT2LMHeadModel.from_pretrained(model_path).to(device)
     return model, tokenizer
 
-model_path = "../gpt2-medquad-finetuned"
+model_path ="gpt2"
 model, tokenizer = load_model_and_tokenizer(model_path)
 
 def prepare_input(tokenizer, input_text):
